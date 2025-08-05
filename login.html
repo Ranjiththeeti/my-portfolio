@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ranjith Login Page | @ranjith_27</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <section>
+    <div class="leaves">
+      <div class="set">
+        <div><img src="leaf_01.png"></div>
+        <div><img src="leaf_02.png"></div>
+        <div><img src="leaf_03.png"></div>
+        <div><img src="leaf_04.png"></div>
+        <div><img src="leaf_01.png"></div>
+        <div><img src="leaf_02.png"></div>
+        <div><img src="leaf_03.png"></div>
+        <div><img src="leaf_04.png"></div>
+      </div>
+    </div>
+    <img src="bg.jpg" class="bg">
+    <img src="girl.png" class="girl">
+    <img src="trees.png" class="trees">
+    <div class="login">
+      <h2>Welcome to Ranjith's Login Page</h2>
+      <div class="inputBox">
+        <input type="text" placeholder="Username" id="username" />
+      </div>
+      <div class="inputBox">
+        <input type="password" placeholder="Password" id="password" />
+      </div>
+      <div class="inputBox">
+        <input type="submit" value="Login" id="btn" />
+      </div>
+      <div class="group">
+        <a href="#">Forget Password</a>
+        <a href="#">Signup</a>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    document.getElementById("btn").addEventListener("click", function () {
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      if (username === "Ranjith Theeti" && password === "Ranjith@27") {
+        // Redirect to portfolio page (change as needed)
+        window.location.href = "portfolio.html";
+      } else {
+        alert("Incorrect username or password");
+      }
+    });
+  </script>
+</body>
+
+</html>
