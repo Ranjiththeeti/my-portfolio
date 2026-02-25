@@ -1,61 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Ranjith Login Page | @ranjith_27</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Theeti Ranjith Kumar | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <section>
-    <div class="leaves">
-      <div class="set">
-        <div><img src="leaf_01.png"></div>
-        <div><img src="leaf_02.png"></div>
-        <div><img src="leaf_03.png"></div>
-        <div><img src="leaf_04.png"></div>
-        <div><img src="leaf_01.png"></div>
-        <div><img src="leaf_02.png"></div>
-        <div><img src="leaf_03.png"></div>
-        <div><img src="leaf_04.png"></div>
-      </div>
+  <section class="hero">
+    <div class="hero-text">
+      <h3>THEETI RANJITH KUMAR</h3>
+      <h1 class="fixed-heading">
+        🚀 Exploring the World of Ranjith Kumar Theeti
+      </h1>
+      <p>Hi. I'm Ranjith studying in MVGR college of Engineering (ECE) —  I'm passionate about development, design, and innovation and also full-stack development, creative design, and building meaningful digital experiences.</p>
+      <a href="your_resume.pdf" class="cta-button" download>Download Resume</a>
     </div>
-    <img src="bg.jpg" class="bg">
-    <img src="girl.png" class="girl">
-    <img src="trees.png" class="trees">
-    <div class="login">
-      <h2>Welcome to Ranjith's Login Page</h2>
-      <div class="inputBox">
-        <input type="text" placeholder="Username" id="username" />
-      </div>
-      <div class="inputBox">
-        <input type="password" placeholder="Password" id="password" />
-      </div>
-      <div class="inputBox">
-        <input type="submit" value="Login" id="btn" />
-      </div>
-      <div class="group">
-        <a href="#">Forget Password</a>
-        <a href="#">Signup</a>
-      </div>
+    <div class="hero-image">
+      <img src="profile.jpg" alt="Theeti Ranjith Kumar" />
     </div>
-
   </section>
 
-  <script>
-    document.getElementById("btn").addEventListener("click", function () {
-      const username = document.getElementById("username").value.trim();
-      const password = document.getElementById("password").value.trim();
+  <section class="skills">
+    <h3>Skills</h3>
+    <div class="skill-tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Python</span>
+      <span>Git</span>
+      <span>C</span>
+<span>SQL</span>
+<span>Verilog</span>
+<span>VHDL(Xilinx Vivado)</span>
+<span>Aurdino IDE</span>
+<span>Tinkercad</span>
+<span>LTSpice</span>
+</div>
+  </section>
 
-      if (username === "Ranjith Theeti" && password === "Ranjith@27") {
-        // Redirect to portfolio page (change as needed)
-        window.location.href = "portfolio.html";
-      } else {
-        alert("Incorrect username or password");
-      }
-    });
-  </script>
+  <section class="projects">
+    <h3>Projects</h3>
+    <div class="project-cards">
+      <div class="project-card">
+        <i class="fas fa-code"></i>
+        <h4>EAPCET Guide App</h4>
+        <p>Developed an academic guidance platform providing structured sources and navigation</p>
+      </div>
+      <div class="project-card">
+        <i class="fas fa-gamepad"></i>
+        <h4>ESP32-CAM Vehicle Number Plate Recognition</h4>
+        <p>Developed an Embedded vision-based system using ESP-32 CAM for automated vehicle number plate detection</p>
+      </div>
+      <div class="project-card">
+        <i class="fas fa-chart-line"></i>
+        <h4>SMART WASTE MANAGEMENT SYSTEM</h4>
+        <p>Designed and implemented an IOT-enabled waste monitoring system to detect the type of garbage</p>
+      </div>
+      <div class="project-card">
+        <i class="fas fa-code"></i>
+        <h4>PORTFOLIO GENERATOR</h4>
+        <p>Built a dynamic web-based portfolio generator for students using modern technologies</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h3>Contact Me</h3>
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> <a href="mailto:ranjithkumartheeti961@gmail.com">ranjithkumartheeti961@gmail.com</a></p>
+      <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/9182539210" target="_blank">9182539210</a></p>
+    </div>
+  </section>
+
+  <section class="social">
+    <h3>Find Me Online</h3>
+    <div class="social-links">
+      <a href="https://github.com/Ranjiththeeti" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://youtube.com/@ranjiththeeti?si=2NhHInHuwVhOYeA2" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/ranjiththeeti_27?igsh=MTV3ZHp0dG1yNW8zMw==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/ranjith-theeti-510316300?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Theeti Ranjith Kumar</p>
+  </footer>
 </body>
-
 </html>
